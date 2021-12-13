@@ -5,7 +5,6 @@ from django.views import View
 from .models import Topic
 from .forms import TopicForm
 
-
 import magic
 
 

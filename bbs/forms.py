@@ -6,6 +6,6 @@ class TopicForm(forms.ModelForm):
 
     class Meta:
         model   = Topic
-        fields  = [ "comment","document" ]
+        fields  = [ "document" ]
 
 

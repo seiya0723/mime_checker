@@ -8,13 +8,12 @@
 </head>
 <body>
 
-    <h1 class="bg-primary">MIMEタイプ判定</h1>
+    <h1 class="bg-primary text-white">MIMEタイプ判定</h1>
 
     <main class="container">
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="file" name="document">
-            <textarea class="form-control" name="comment"></textarea>
             <input type="submit" value="送信">
         </form>
 
@@ -25,13 +24,6 @@
             {% endfor %}
         </ul>
         {% endif %}
-
-
-        {% for topic in topics %}
-        <div class="border">
-            {{ topic.comment }}
-        </div>
-        {% endfor %}
 
     </main>
 </body>
